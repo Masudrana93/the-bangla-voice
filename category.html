@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Somoy-News-TV</title>
+
+    <!-- Bootstrap CSS Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Bootstrap icons Link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- External CSS Link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- -----------Header Section Start--------- -->
+    <!-- ----Top Menu Start--- -->
+    <div class="position-fixed bg-transparent bg-custom-white-transparent w-100 z-index-99">
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row mb-md-3">
+                    <!-- Logo-Search-button and date Part Start  -->
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div class="main-logo me-2">
+                            <a href="index.html">
+                                <img src="images/main-logo.png" alt="Main-logo" height="auto" width="200">
+                            </a>
+                        </div>
+                        <div class="news-search">
+                            <form class="d-flex" role="search">
+                                <input class="form-control rounded-0 border-2 border-secondary" type="search"
+                                    placeholder="নিউজ খুঁজুন" aria-label="Search" />
+                                <button class="btn btn-outline-dark rounded-0 bg-dark" type="submit"><i
+                                        class="bi bi-search text-white"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-end align-items-center text-white">
+                        মঙ্গলবার, ১৫ জুলাই ২০২৫, ৩১শে আষাঢ় ১৪৩২
+                    </div>
+                    <!-- Logo-Search-button and date Part End  -->
+
+                </div>
+                <div class="row mb-md-3">
+                    <!-- Video-button and Live-button Part Start  -->
+                    <div class="col-12 d-flex justify-content-between mb-2">
+
+                        <div class="shorboshes-and-video-button">
+                            <button class="btn btn-outline-danger rounded-pill">সর্বশেষ বাংলা-ভয়েজ</button>
+                            <button class="btn btn-outline-danger rounded-pill"><i
+                                    class="bi bi-play-circle-fill me-2"></i>ভিডিও বাংলা-ভয়েজ</button>
+                        </div>
+                        <div class="live-tv-button">
+                            <button class="btn btn-outline-danger rounded-pill"><i
+                                    class="bi bi-play-btn me-2"></i>বাংলা-ভয়েজ টিভি
+                                লাইভ</button>
+                        </div>
+
+                    </div>
+
+                    <!-- Video-button and Live-button Part End  -->
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ----Top Menu End--- -->
+
+        <!-- -----Navbar Start---- -->
+        <nav class="navbar navbar-expand-lg bg-body-dark bg-black py-0 z-3">
+            <div class="container-fluid">
+                <div class="container">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-white py-3" aria-current="page"
+                                    href="category.html">বাংলাদেশ</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-white py-3" href="category.html">রাজনীতি</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-white py-3" href="category.html">আন্তর্জাতিক</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-white py-3" href="category.html">খেলা</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-white py-3" href="category.html">বিনোদন</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-white py-3" href="category.html">স্বাস্থ্য</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-white py-3" href="category.html">বাণিজ্য</a>
+                            </li>
+                            <li class="nav-item dropdown me-5">
+                                <a class="nav-link dropdown-toggle text-white py-3" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    আরও
+                                </a>
+                                <ul class="dropdown-menu py-0 rounded-0 shadow border-0">
+                                    <li><a class="dropdown-item py-2 pe-5" href="category.html">সময় স্পেশাল</a></li>
+                                    <li><a class="dropdown-item py-2 pe-5" href="category.html">শিক্ষা</a></li>
+                                    <li><a class="dropdown-item py-2 pe-5" href="category.html">মুক্তকথা</a></li>
+                                    <li><a class="dropdown-item py-2 pe-5" href="category.html">ধর্ম</a></li>
+                                    <li><a class="dropdown-item py-2 pe-5" href="category.html">চাকরি</a></li>
+                                    <li><a class="dropdown-item py-2 pe-5" href="category.html">সাহিত্য ও সংস্কৃতি</a>
+                                    </li>
+                                    <li><a class="dropdown-item py-2 pe-5" href="category.html">বিজ্ঞান ও প্রযুক্তি</a>
+                                    </li>
+                                    <li><a class="dropdown-item py-2 pe-5" href="category.html">সময় প্রবাস</a></li>
+                                    <li><a class="dropdown-item py-2 pe-5" href="category.html">লাইফস্টাইল</a></li>
+                                    <li><a class="dropdown-item py-2 pe-5" href="category.html">ফিচার</a></li>
+                                    <li><a class="dropdown-item py-2 pe-5" href="category.html">অন্যান্য</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                        <button class="btn d-flex align-items-center">
+                            <img src="images/en-flag.jpg" alt="Flag" class="rounded-circle">
+                            <span class="d-flex align-items-center ms-2 text-white">EN</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- -----Navbar End---- -->
+    </div>
+    <!-- -----------Header Section End--------- -->
+
+    <!--------- Section 1 == Bangladesh Section Start ------- -->
+    <div class="container-fluid mb-md-5 mb-3 category-page-specific-padding">
+        <div class="container">
+            <div class="row mt-5">
+
+                <!-- ----Bangladesh Start --- -->
+                <div class="col-12">
+                    <h2>বাংলাদেশ</h2>
+                    <div>
+                        <hr class="hr-rule-color">
+                    </div>
+                </div>
+
+
+                <div class="col-md-8">
+                    <img src="images/bang-1.jpg" alt="photo" class="img-fluid">
+                </div>
+
+
+                <div class="col-md-4 mt-md-0 mt-5">
+
+                    <!-- per item start -->
+                    <div class="row gx-2 border shadow px-0 position-relative mb-4">
+                        <div class="col-4 position-relative px-0 mt-0">
+                            <img src="images/Untitled-4.jpg" alt="photo" class="img-fluid">
+                            <div
+                                class="position-absolute top-0 start-0 bg-dark px-2 py-1 text-white bg-opacity-25 w-100">
+                                <small>১৬ ঘণ্টা আগে</small>
+                            </div>
+
+                        </div>
+                        <div class="col-8 p-2">
+                            <small class="text-danger">শিক্ষা</small>
+                            <a href="#" class="stretched-link text-decoration-none text-dark d-block">
+                                <span>জাতীয় বিশ্ববিদ্যালয়ের পরীক্ষা স্থগিত জাতীয় পরীক্ষা স্থগিত জাতীয়</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- per item end -->
+
+                    <!-- per item start -->
+                    <div class="row gx-2 border shadow px-0 position-relative mb-4">
+                        <div class="col-4 position-relative px-0 mt-0">
+                            <img src="images/Untitled-4.jpg" alt="photo" class="img-fluid">
+                            <div
+                                class="position-absolute top-0 start-0 bg-dark px-2 py-1 text-white bg-opacity-25 w-100">
+                                <small>১৬ ঘণ্টা আগে</small>
+                            </div>
+
+                        </div>
+                        <div class="col-8 p-2">
+                            <small class="text-danger">শিক্ষা</small>
+                            <a href="#" class="stretched-link text-decoration-none text-dark d-block">
+                                <span>জাতীয় বিশ্ববিদ্যালয়ের পরীক্ষা স্থগিত জাতীয় পরীক্ষা স্থগিত জাতীয়</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- per item end -->
+
+                    <!-- per item start -->
+                    <div class="row gx-2 border shadow px-0 position-relative mb-4">
+                        <div class="col-4 position-relative px-0 mt-0">
+                            <img src="images/Untitled-4.jpg" alt="photo" class="img-fluid">
+                            <div
+                                class="position-absolute top-0 start-0 bg-dark px-2 py-1 text-white bg-opacity-25 w-100">
+                                <small>১৬ ঘণ্টা আগে</small>
+                            </div>
+
+                        </div>
+                        <div class="col-8 p-2">
+                            <small class="text-danger">শিক্ষা</small>
+                            <a href="#" class="stretched-link text-decoration-none text-dark d-block">
+                                <span>জাতীয় বিশ্ববিদ্যালয়ের পরীক্ষা স্থগিত জাতীয় পরীক্ষা স্থগিত জাতীয়</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- per item end -->
+
+                    <!-- per item start -->
+                    <div class="row gx-2 border shadow px-0 position-relative mb-4">
+                        <div class="col-4 position-relative px-0 mt-0">
+                            <img src="images/Untitled-4.jpg" alt="photo" class="img-fluid">
+                            <div
+                                class="position-absolute top-0 start-0 bg-dark px-2 py-1 text-white bg-opacity-25 w-100">
+                                <small>১৬ ঘণ্টা আগে</small>
+                            </div>
+
+                        </div>
+                        <div class="col-8 p-2">
+                            <small class="text-danger">শিক্ষা</small>
+                            <a href="#" class="stretched-link text-decoration-none text-dark d-block">
+                                <span>জাতীয় বিশ্ববিদ্যালয়ের পরীক্ষা স্থগিত জাতীয় পরীক্ষা স্থগিত জাতীয়</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- per item end -->
+
+
+
+
+                </div>
+                <!-- ---Sorbadik-potitho End---  -->
+            </div>
+        </div>
+    </div>
+    <!--------- Section 1 == Bangladesh Section End ------- -->
+
+
+    <!--------- Section 2 == Sorboshes-Bangla-Voice and Sorbadik-potitho Section Start ------- -->
+    <div class="container-fluidm mb-md-5 mb-3">
+        <div class="container">
+            <div class="row mt-5">
+
+                <!-- ----Sorboshes-Bangla-Voice Start --- -->
+                <div class="col-md-8">
+                    <h6>সর্বশেষ বাংলা-ভয়েজ</h6>
+                    <div>
+                        <hr class="hr-rule-color">
+                    </div>
+                    <div class="row">
+
+                        <!-- ---------First Coulmn Start ---------- -->
+                        <div class="col-md-4">
+                            <div class="row">
+                                <!-- item-one start -->
+                                <div class="col-12 mb-3">
+                                    <div class="card overflow-hidden rounded-0 shadow hover-card position-relative mb-2"
+                                        style="height: 250px;">
+                                        <img src="images/photo-1.jpg" alt="hover image"
+                                            class="hover-image position-absolute" />
+                                        <div class="card-body">
+                                            <h5 class="card-title text-danger mb-3">বাণিজ্য</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary mb-3">১ মিনিট আগে</h6>
+                                            <p class="card-text fs-5">
+                                                <b>জমি নিয়ে বিরোধে হত্যা: পিরোজপুরে ৪ জনের যাবজ্জীবন
+                                                    কারাদণ্ড....</b>
+                                            </p>
+                                            <a href="single.html" class="stretched-link text-decoration-none text-dark">
+                                                <span>ব্লকবাস্টার হিট সিনেমা ‘বজরঙ্গি ভাইজান’। বলিউডের
+                                                    মেগাস্টার...</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item-one end -->
+                                <!-- item-two start -->
+                                <div class="col-12 mb-3">
+                                    <div class="card overflow-hidden rounded-0 shadow hover-card position-relative mb-2"
+                                        style="height: 250px;">
+                                        <img src="images/photo-1.jpg" alt="hover image"
+                                            class="hover-image position-absolute" />
+                                        <div class="card-body">
+                                            <h5 class="card-title text-danger mb-3">বাণিজ্য</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary mb-3">১ মিনিট আগে</h6>
+                                            <p class="card-text fs-5">
+                                                <b>জমি নিয়ে বিরোধে হত্যা: পিরোজপুরে ৪ জনের যাবজ্জীবন
+                                                    কারাদণ্ড....</b>
+                                            </p>
+                                            <a href="single.html" class="stretched-link text-decoration-none text-dark">
+                                                <span>ব্লকবাস্টার হিট সিনেমা ‘বজরঙ্গি ভাইজান’। বলিউডের
+                                                    মেগাস্টার...</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item-two end -->
+
+                            </div>
+
+                        </div>
+                        <!-- ---------First Coulmn End ---------- -->
+
+                        <!-- ---------Second Coulmn Start ---------- -->
+                        <div class="col-md-4">
+                            <div class="row">
+                                <!-- item-one start -->
+                                <div class="col-12 mb-3">
+                                    <div class="card overflow-hidden rounded-0 shadow mb-2">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-danger mb-3">বাণিজ্য</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary mb-3">১ মিনিট আগে</h6>
+                                            <p class="card-text fs-5">
+                                                <b>জমি নিয়ে বিরোধে হত্যা: পিরোজপুরে ৪ জনের যাবজ্জীবন
+                                                    কারাদণ্ড....</b>
+                                            </p>
+                                            <a href="#" class="stretched-link text-decoration-none text-dark">
+                                                <span>ব্লকবাস্টার হিট সিনেমা ‘বজরঙ্গি ভাইজান’। বলিউডের
+                                                    মেগাস্টার...</span>
+                                            </a>
+                                        </div>
+                                        <div class="position-relative">
+                                            <img src="images/photo-1.jpg" class="card-img-bottom rounded-0 img-fluid"
+                                                alt="News photo">
+                                            <div
+                                                class="position-absolute top-0 start-0 bg-dark p-3 text-white bg-opacity-25 w-100">
+                                                <small>১ মিনিটে পড়ুন</small>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- item-one end -->
+
+                            </div>
+
+                        </div>
+                        <!-- ---------Second Coulmn End ---------- -->
+
+
+                        <!-- ---------Third Coulmn Start ---------- -->
+                        <div class="col-md-4">
+                            <div class="row">
+                                <!-- item-one start -->
+                                <div class="col-12 mb-3">
+                                    <div class="card overflow-hidden rounded-0 shadow hover-card position-relative mb-2"
+                                        style="height: 250px;">
+                                        <img src="images/photo-1.jpg" alt="hover image"
+                                            class="hover-image position-absolute" />
+                                        <div class="card-body">
+                                            <h5 class="card-title text-danger mb-3">বাণিজ্য</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary mb-3">১ মিনিট আগে</h6>
+                                            <p class="card-text fs-5">
+                                                <b>জমি নিয়ে বিরোধে হত্যা: পিরোজপুরে ৪ জনের যাবজ্জীবন
+                                                    কারাদণ্ড....</b>
+                                            </p>
+                                            <a href="#" class="stretched-link text-decoration-none text-dark">
+                                                <span>ব্লকবাস্টার হিট সিনেমা ‘বজরঙ্গি ভাইজান’। বলিউডের
+                                                    মেগাস্টার...</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item-one end -->
+                                <!-- item-two start -->
+                                <div class="col-12 mb-3">
+                                    <div class="card overflow-hidden rounded-0 shadow hover-card position-relative mb-2"
+                                        style="height: 250px;">
+                                        <img src="images/photo-1.jpg" alt="hover image"
+                                            class="hover-image position-absolute" />
+                                        <div class="card-body">
+                                            <h5 class="card-title text-danger mb-3">বাণিজ্য</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary mb-3">১ মিনিট আগে</h6>
+                                            <p class="card-text fs-5">
+                                                <b>জমি নিয়ে বিরোধে হত্যা: পিরোজপুরে ৪ জনের যাবজ্জীবন
+                                                    কারাদণ্ড....</b>
+                                            </p>
+                                            <a href="#" class="stretched-link text-decoration-none text-dark">
+                                                <span>ব্লকবাস্টার হিট সিনেমা ‘বজরঙ্গি ভাইজান’। বলিউডের
+                                                    মেগাস্টার...</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item-two end -->
+
+                            </div>
+
+                        </div>
+                        <!-- ---------Third Coulmn End ---------- -->
+
+
+                    </div>
+                </div>
+                <!-- ----Sorboshes-Bangla-Voice End --- -->
+
+                <!-- ---Sorbadik-potitho Start---  -->
+                <div class="col-md-4 mt-md-0 mt-5">
+                    <h6>সর্বাধিক পঠিত বাংলা-ভয়েজ</h6>
+                    <div>
+                        <hr class="hr-rule-color">
+                    </div>
+
+                    <!-- per item start -->
+                    <div class="row gx-2 border shadow px-0 position-relative mb-4">
+                        <div class="col-4 position-relative px-0 mt-0">
+                            <img src="images/Untitled-4.jpg" alt="photo" class="img-fluid">
+                            <div
+                                class="position-absolute top-0 start-0 bg-dark px-2 py-1 text-white bg-opacity-25 w-100">
+                                <small>১৬ ঘণ্টা আগে</small>
+                            </div>
+
+                        </div>
+                        <div class="col-8 p-2">
+                            <small class="text-danger">শিক্ষা</small>
+                            <a href="#" class="stretched-link text-decoration-none text-dark d-block">
+                                <span>জাতীয় বিশ্ববিদ্যালয়ের পরীক্ষা স্থগিত জাতীয় পরীক্ষা স্থগিত জাতীয়</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- per item end -->
+
+                    <!-- per item start -->
+                    <div class="row gx-2 border shadow px-0 position-relative mb-4">
+                        <div class="col-4 position-relative px-0 mt-0">
+                            <img src="images/Untitled-4.jpg" alt="photo" class="img-fluid">
+                            <div
+                                class="position-absolute top-0 start-0 bg-dark px-2 py-1 text-white bg-opacity-25 w-100">
+                                <small>১৬ ঘণ্টা আগে</small>
+                            </div>
+
+                        </div>
+                        <div class="col-8 p-2">
+                            <small class="text-danger">শিক্ষা</small>
+                            <a href="#" class="stretched-link text-decoration-none text-dark d-block">
+                                <span>জাতীয় বিশ্ববিদ্যালয়ের পরীক্ষা স্থগিত জাতীয় পরীক্ষা স্থগিত জাতীয়</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- per item end -->
+
+                    <!-- per item start -->
+                    <div class="row gx-2 border shadow px-0 position-relative mb-4">
+                        <div class="col-4 position-relative px-0 mt-0">
+                            <img src="images/Untitled-4.jpg" alt="photo" class="img-fluid">
+                            <div
+                                class="position-absolute top-0 start-0 bg-dark px-2 py-1 text-white bg-opacity-25 w-100">
+                                <small>১৬ ঘণ্টা আগে</small>
+                            </div>
+
+                        </div>
+                        <div class="col-8 p-2">
+                            <small class="text-danger">শিক্ষা</small>
+                            <a href="#" class="stretched-link text-decoration-none text-dark d-block">
+                                <span>জাতীয় বিশ্ববিদ্যালয়ের পরীক্ষা স্থগিত জাতীয় পরীক্ষা স্থগিত জাতীয়</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- per item end -->
+
+                    <!-- per item start -->
+                    <div class="row gx-2 border shadow px-0 position-relative mb-4">
+                        <div class="col-4 position-relative px-0 mt-0">
+                            <img src="images/Untitled-4.jpg" alt="photo" class="img-fluid">
+                            <div
+                                class="position-absolute top-0 start-0 bg-dark px-2 py-1 text-white bg-opacity-25 w-100">
+                                <small>১৬ ঘণ্টা আগে</small>
+                            </div>
+
+                        </div>
+                        <div class="col-8 p-2">
+                            <small class="text-danger">শিক্ষা</small>
+                            <a href="#" class="stretched-link text-decoration-none text-dark d-block">
+                                <span>জাতীয় বিশ্ববিদ্যালয়ের পরীক্ষা স্থগিত জাতীয় পরীক্ষা স্থগিত জাতীয়</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- per item end -->
+
+                    <!-- per item start -->
+                    <div class="row gx-2 border shadow px-0 position-relative mb-4">
+                        <div class="col-4 position-relative px-0 mt-0">
+                            <img src="images/Untitled-4.jpg" alt="photo" class="img-fluid">
+                            <div
+                                class="position-absolute top-0 start-0 bg-dark px-2 py-1 text-white bg-opacity-25 w-100">
+                                <small>১৬ ঘণ্টা আগে</small>
+                            </div>
+
+                        </div>
+                        <div class="col-8 p-2">
+                            <small class="text-danger">শিক্ষা</small>
+                            <a href="#" class="stretched-link text-decoration-none text-dark d-block">
+                                <span>জাতীয় বিশ্ববিদ্যালয়ের পরীক্ষা স্থগিত জাতীয় পরীক্ষা স্থগিত জাতীয়</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- per item end -->
+
+
+                </div>
+                <!-- ---Sorbadik-potitho End---  -->
+            </div>
+        </div>
+    </div>
+    <!--------- Section 2 == Sorboshes-Bangla-Voice and Sorbadik-potitho Section End ------- -->
+
+
+    <!--------- Section 3 == Aro Bangla-Voice News Section Start ------- -->
+    <div class="container-fluid mb-md-5 mb-3">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h6>আরও বাংলা-ভয়েজ সংবাদ</h6>
+                    <div>
+                        <hr class="hr-rule-color">
+                    </div>
+                </div>
+            </div>
+
+            <!-- per item start  -->
+            <div class="row mb-3">
+                <div class="col-4">
+
+                    <div class="overflow-hidden position-relative">
+                        <a href="#"><img src="images/bank.jpg" alt="Photo" class="img-fluid"></a>
+                        <div class="for-gradient-color position-absolute top-0 start-0 px-2 py-1 text-white w-100">
+                            <small><a href="#" class="stretched-link text-decoration-none text-white">২ মিনিটে
+                                    পড়ুন</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h6><a href="category.html" class="text-decoration-none text-danger">বাংলাদেশ</a></h6>
+                        <h6 class="text-secondary">১ ঘণ্টা আগে</h6>
+                    </div>
+                    <div>
+                        <h2 class="mb-md-3 mb-1"><a href="#" class="text-decoration-none text-dark">নতুন কোনো গডফাদারের
+                                আবির্ভাব হতে দেব না: নাহিদ</a></h2>
+                        <p><a href="#" class="text-decoration-none text-dark">বাংলাদেশে নতুন কোনো গডফাদারের আবির্ভাব হতে
+                                দিবেন না বলে হুঁশিয়ারি দিয়েছেন জাতীয় নাগরিক
+                                পার্টির (এনসিপি) আহ্বায়ক নাহিদ ইসলাম।</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- per item end  -->
+
+            <!-- per item start  -->
+            <div class="row mb-3">
+                <div class="col-4">
+
+                    <div class="overflow-hidden position-relative">
+                        <a href="#"><img src="images/bank.jpg" alt="Photo" class="img-fluid"></a>
+                        <div class="for-gradient-color position-absolute top-0 start-0 px-2 py-1 text-white w-100">
+                            <small><a href="#" class="stretched-link text-decoration-none text-white">২ মিনিটে
+                                    পড়ুন</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h6><a href="category.html" class="text-decoration-none text-danger">বাংলাদেশ</a></h6>
+                        <h6 class="text-secondary">১ ঘণ্টা আগে</h6>
+                    </div>
+                    <div>
+                        <h2 class="mb-md-3 mb-1"><a href="#" class="text-decoration-none text-dark">নতুন কোনো গডফাদারের
+                                আবির্ভাব হতে দেব না: নাহিদ</a></h2>
+                        <p><a href="#" class="text-decoration-none text-dark">বাংলাদেশে নতুন কোনো গডফাদারের আবির্ভাব হতে
+                                দিবেন না বলে হুঁশিয়ারি দিয়েছেন জাতীয় নাগরিক
+                                পার্টির (এনসিপি) আহ্বায়ক নাহিদ ইসলাম।</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- per item end  -->
+
+            <!-- per item start  -->
+            <div class="row mb-3">
+                <div class="col-4">
+
+                    <div class="overflow-hidden position-relative">
+                        <a href="#"><img src="images/bank.jpg" alt="Photo" class="img-fluid"></a>
+                        <div class="for-gradient-color position-absolute top-0 start-0 px-2 py-1 text-white w-100">
+                            <small><a href="#" class="stretched-link text-decoration-none text-white">২ মিনিটে
+                                    পড়ুন</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h6><a href="category.html" class="text-decoration-none text-danger">বাংলাদেশ</a></h6>
+                        <h6 class="text-secondary">১ ঘণ্টা আগে</h6>
+                    </div>
+                    <div>
+                        <h2 class="mb-md-3 mb-1"><a href="#" class="text-decoration-none text-dark">নতুন কোনো গডফাদারের
+                                আবির্ভাব হতে দেব না: নাহিদ</a></h2>
+                        <p><a href="#" class="text-decoration-none text-dark">বাংলাদেশে নতুন কোনো গডফাদারের আবির্ভাব হতে
+                                দিবেন না বলে হুঁশিয়ারি দিয়েছেন জাতীয় নাগরিক
+                                পার্টির (এনসিপি) আহ্বায়ক নাহিদ ইসলাম।</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- per item end  -->
+
+            <!-- per item start  -->
+            <div class="row mb-3">
+                <div class="col-4">
+
+                    <div class="overflow-hidden position-relative">
+                        <a href="#"><img src="images/bank.jpg" alt="Photo" class="img-fluid"></a>
+                        <div class="for-gradient-color position-absolute top-0 start-0 px-2 py-1 text-white w-100">
+                            <small><a href="#" class="stretched-link text-decoration-none text-white">২ মিনিটে
+                                    পড়ুন</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h6><a href="category.html" class="text-decoration-none text-danger">বাংলাদেশ</a></h6>
+                        <h6 class="text-secondary">১ ঘণ্টা আগে</h6>
+                    </div>
+                    <div>
+                        <h2 class="mb-md-3 mb-1"><a href="#" class="text-decoration-none text-dark">নতুন কোনো গডফাদারের
+                                আবির্ভাব হতে দেব না: নাহিদ</a></h2>
+                        <p><a href="#" class="text-decoration-none text-dark">বাংলাদেশে নতুন কোনো গডফাদারের আবির্ভাব হতে
+                                দিবেন না বলে হুঁশিয়ারি দিয়েছেন জাতীয় নাগরিক
+                                পার্টির (এনসিপি) আহ্বায়ক নাহিদ ইসলাম।</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- per item end  -->
+            <div class="d-flex justify-content-center mt-5">
+                <button class="btn btn-outline-danger rounded-pill bg-danger"><a href="#"
+                        class="text-decoration-none text-white"> আরও নিউজ <i
+                            class="bi bi-caret-down-fill"></i></a></button>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Section 3 == Aro Bangla-Voice News Section End ------- -->
+
+    <!-- -----------Footer Section Start--------- -->
+
+    <div class="container-fluid">
+        <div class="container">
+            <!-- Footer First Menubar Start  -->
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+                <div class="col-12">
+                    <ul class="bottom-first-menubar ps-0 d-flex flex-wrap justify-content-center">
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">বাংলাদেশ</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">রাজনীতি</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">আন্তর্জাতিক</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">খেলা</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">বিনোদন</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">স্বাস্থ্য</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">বাণিজ্য</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">সময়
+                                স্পেশাল</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">শিক্ষা</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">মুক্তকথা</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">ধর্ম</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">চাকরি</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">সাহিত্য ও সংস্কৃতি</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">বিজ্ঞান ও প্রযুক্তি</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">বাংলা-ভয়েজ প্রবাস</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">লাইফস্টাইল</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">ফিচার</a></li>
+                        <li class="me-4 py-3"><a href="category.html"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">অন্যান্য</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer First Menubar End -->
+
+            <!-- Footer-logo Start  -->
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="mb-3">
+                        <img src="images/main-logo.png" alt="logo" height="auto" width="150">
+                    </div>
+                    <div>
+                        <h5 class="mb-3">দ্যা বাংলা-ভয়েজ</h5>
+                        <p>রাজনীতি, বাণিজ্য, খেলাধুলা, জাতীয়-আন্তর্জাতিক ব্রেকিং নিউজ, বিশ্লেষণমূলক সংবাদসহ যাবতীয় খবর
+                            পেতে চোখ রাখুন সময় নিউজে।</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Footer-logo End  -->
+            <!-- Social Links Start  -->
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+
+                <div class="col-md-8">
+                    <h5 class="mb-3">দ্যা বাংলা-ভয়েজ মোবাইল অ্যাপ ডাউনলোড করুন</h5>
+                    <div>
+                        <a href="#"><img src="images/googleplayStore.png" alt="Google-play-store-logo"></a>
+                        <a href="#"><img src="images/appleStore.png" alt="Apple-store-logo"></a>
+                    </div>
+
+                </div>
+                <div class="col-md-3 mt-md-0 mt-3">
+                    <h5 class="mb-3">ফলো সামাজিক বাংলা-ভয়েজ</h5>
+                    <div>
+                        <ul class="social-icon-hover list-unstyled d-flex justify-content-between">
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="#"><i class="bi bi-pinterest"></i></a></li>
+                            <li><a href="#"><i class="bi bi-rss-fill"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Social Links End  -->
+
+            <!-- Footer Last Part Start  -->
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+                <div class="col-md-7">
+                    <ul class="footer-last-menubar ps-0 d-flex mb-0">
+                        <li class="me-4 py-3"><a href="#"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">আমাদের সম্পর্কে</a></li>
+                        <li class="me-4 py-3"><a href="#"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">গোপনীয়তা নীতি</a></li>
+                        <li class="me-4 py-3"><a href="#"
+                                class="text-decoration-none text-dark px-3 py-2 rounded-1">যোগাযোগ</a></li>
+                </div>
+                <div class="col-md-5 d-flex align-items-center ">
+                    <div class="me-2">
+                        <span class="text-center">© ২০২৫ দ্যা বাংলা-ভয়েজ | সমস্ত অধিকার সংরক্ষিত</span>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/dmca_copyright_protected.png" alt="copy-right-log"></a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Footer Last Part End -->
+        </div>
+    </div>
+
+    <!-- -----------Footer Section End--------- -->
+
+
+    <!-- Bootstrap-bundle-min-js Link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
