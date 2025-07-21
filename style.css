@@ -158,7 +158,16 @@ body {
 .z-index-99 {
   z-index: 99 !important;
 }
-.social-icon-link-hover li a{
- padding: 10px;
- font-size: 20px;
+.social-icon-link-hover li a:hover{
+ background-color: rgb(221, 192, 192);
+ color: white;
+}
+.social-icon-link-hover li a {
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    margin-right: 8px;
+    border-radius: 50%;
+    font-size: 16px;
+    
 }
