@@ -226,7 +226,7 @@ span.navbar-toggler-icon {
       object-fit: cover;
     }
 
-     .custom-button-prev, .custom-button-next {
+    .custom-button-prev, .custom-button-next {
     width: 40px;
     height: 40px;
     background-color: silver;
@@ -245,3 +245,5 @@ span.navbar-toggler-icon {
 .custom-button-next:hover{
   background-color: red;
 }
+
+ 
