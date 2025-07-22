@@ -176,32 +176,7 @@ span.navbar-toggler-icon {
     transform: 0.3s ease;
 }
 
-/* Slider CSS Start  */
-.slider-indicator-modified{
-  bottom: -67px !important;
-}
 
-.carousel-indicators [data-bs-target] {
-   
-    width: 300px !important;
-    border-top: 3px solid red !important;
-    border-bottom: 3px solid transparent !important;
-    
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
- background-color: red !important;
- width: 40px !important;
- height: 40px !important;
- border-radius: 50% !important;
- 
-
-}
-.carousel-control-next, .carousel-control-prev{
-  bottom: -550px !important;
-  width: 20% !important;
-
-}
 
 /* Swiper Slider CSS Start  */
 
@@ -246,4 +221,14 @@ span.navbar-toggler-icon {
   background-color: red;
 }
 
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 100%;
+    height: var(--swiper-pagination-progressbar-size,4px);
+    left: 0;
+    top: unset; 
+    bottom: 0 !important;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #ff0000;
+}
  
