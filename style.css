@@ -239,3 +239,7 @@ span.navbar-toggler-icon {
 .live-tv-button>button>a:hover{
   color: white !important;
 }
+
+.cat-title-english-font {
+    font-family: fantasy;
+}
