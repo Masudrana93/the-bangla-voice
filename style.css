@@ -232,3 +232,14 @@ span.navbar-toggler-icon {
     background: #ff0000;
 }
  
+.live-tv-button>button:hover {
+    background: #ff0000;
+    color: white !important;
+}
+.live-tv-button>button>a:hover{
+  color: white !important;
+}
+
+.cat-title-english-font {
+    font-family: fantasy;
+}

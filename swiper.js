@@ -14,8 +14,8 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     // when window width is >= 992px (desktop)
     992: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
+      slidesPerView: 4,
+      slidesPerGroup: 4,
     },
     // when window width is >= 768px (tablet)
     768: {
